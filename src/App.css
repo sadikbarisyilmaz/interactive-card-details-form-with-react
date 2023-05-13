@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+main {
+  box-sizing: border-box;
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#cards {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  margin-bottom: -10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#cardBack {
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+#cardFront {
+  width: 76%;
+  position: absolute;
+  top: 35%;
+  left: 6%;
+}
+
+#cardLogo {
+  width: 24%;
+  height: 12%;
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  background-image: url("./images/card-logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* #cardLogo > svg {
+  width: 20%;
+  height: 20%;
+  aspect-ratio: 1;
+} */
+#cardNumber {
+  position: absolute;
+  top: 57%;
+  left: 12%;
+}
+
+#cardName {
+  position: absolute;
+  top: 68%;
+  left: 12%;
+}
+
+#cardDate {
+  position: absolute;
+  top: 68%;
+  left: 68%;
+}
+
+#backNumber {
+  position: absolute;
+  top: 29.5%;
+  left: 79%;
+}
+
+#submit {
+  background-color: rgb(33, 9, 47);
+}
+
+@media (min-width: 1024px) {
+
+  main {
+      background-image: url("./images/bg-main-desktop.png");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #cards {
+      position: relative;
+      aspect-ratio: 1 / 1;
   }
-  to {
-    transform: rotate(360deg);
+
+  #cardBack {
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 15%;
   }
+
+  #cardFront {
+      width: 80%;
+      position: absolute;
+      top: 0%;
+      left: 6%;
+  }
+
+  #cardLogo {
+      width: 16%;
+      position: absolute;
+      top: 6%;
+      left: 12%;
+  }
+
+  #cardNumber {
+      position: absolute;
+      top: 24%;
+      left: 12%;
+  }
+
+  #cardName {
+      position: absolute;
+      top: 34%;
+      left: 12%;
+  }
+
+  #cardDate {
+      position: absolute;
+      top: 34%;
+      left: 68%;
+  }
+
+  #backNumber {
+      position: absolute;
+      top: 69%;
+      left: 79%;
+  }
+
+  #submit {
+      background-color: rgb(33, 9, 47);
+  }
+
 }
